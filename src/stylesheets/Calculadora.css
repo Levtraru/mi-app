@@ -1,0 +1,92 @@
+.Calculadora{
+    padding-top: 15px;
+    box-sizing: border-box;
+    background-color: #1b1b32;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: Lato, sans-serif;
+}
+.contenedor-calculadora{
+    width: 400px;
+    height: 600px;
+    padding: 14px;
+    background-color: #AFA88C;
+    border-radius: 20px;
+    border: 5px solid white;
+    box-shadow: 1px 2px 0.06em 1px rgb(0, 0, 0, 0.5);
+}
+.fila{
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.botones-contenedor{
+    height: 83px;
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 38px;
+    background-color: #F8F3DF;
+    color: #1C1B17;
+    border-radius: 25px;
+    border: 2px solid white;
+    margin: 4px;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 1px 2px 0.06em 1px rgb(0, 0, 0, 0.5);
+}
+.operator{
+    color: #F8F3DF;
+    background-color: #5981BC;
+}
+.input{
+    height: 75px;
+    box-sizing:border-box;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #240A17;
+    color: #9F377D;
+    box-sizing: border-box;
+    padding: 11px 30px 11px 11px;
+    border: 2px solid white;
+    box-shadow: 1px 2px 0.06em 1px rgb(0, 0, 0, 0.5);
+}
+.boton-clear{
+    height: 80px;
+    font-size: 1.6em;
+    display: flex;
+    flex: 1;
+    background-color: #F74738;
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #F8F3DF;
+    border-radius: 45px;
+    border: 2px solid white;
+    cursor: pointer;
+    box-shadow: 1px 2px 0.06em 1px rgb(0, 0, 0, 0.5);
+    user-select: none;
+}
+.boton-clear:hover,
+.botones-contenedor:hover{
+    box-shadow: 1px 2px 1px 1px rgb(0, 0, 0, 0.5),
+        inset 0.1em 0.1em 0.06em rgba(255, 255, 255, 0.3),
+        inset -0.1em -0.1em 0.06em rgba(0, 0, 0, 0.5);
+}
+.boton-clear:active,
+.botones-contenedor:active{
+    box-shadow: 1px 2px 0.06em 1px rgb(0, 0, 0, 0.5),
+    inset 0 0 0.1em 5px rgba(0, 0, 0, 0.5);
+}

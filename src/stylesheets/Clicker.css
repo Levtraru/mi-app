@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: #1b1b32;
+}
+
+.Clicker{
+    padding-top: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #1b1b32;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: Lato, sans-serif;
+}
+
+.velcamp-logo{
+    height: 50px;
+}
+
+.contenedor-principal-clicker{
+    height: 550px;
+    min-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}

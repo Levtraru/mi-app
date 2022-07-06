@@ -1,0 +1,23 @@
+.clicker-boton {
+    width: 250px;
+    height: 80px;
+    font-size: 35px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.clicker-boton:hover{
+    background: linear-gradient(360deg, rgba(29,98,39,1) 0%, rgba(61,140,59,1) 35%, rgba(156,214,96,1) 100%);
+}
+
+.boton-click{
+    background: linear-gradient(360deg, rgba(33,29,98,1) 0%, rgba(59,59,140,1) 35%, rgba(96,214,193,1) 100%);;
+}
+.boton-reiniciar{
+    background: linear-gradient(360deg, rgba(53,29,98,1) 0%, rgba(79,59,140,1) 35%, rgba(213,96,214,1) 100%);
+}
