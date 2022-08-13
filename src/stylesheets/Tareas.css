@@ -71,14 +71,22 @@ h1{
   font-size: 20px;
   display: flex;
   align-items: center;
+  user-select: none;
   overflow-wrap: anywhere; /* Si el texto de la tarea es muy largo, va a continuar hacia abajo */
 }
-.tarea-icono{
-  color: #9F2D24;
+.tarea-icono-check{
+  color: #268600;
   width: 25px;
   height: 25px;
   margin: 5px;
 }
+.tarea-icono-close{
+  color: #8C8C8C;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
 .tarea-contenedor.completada{
   background-color: #8C8C8C;
   text-decoration: line-through #252525;

@@ -1,4 +1,4 @@
-import { AiOutlineCloseCircle } from 'react-icons/ai'
+import { AiFillCheckCircle, AiOutlineCheckCircle } from 'react-icons/ai'
 import { useState } from 'react';
 import {v4 as uuidv4} from 'uuid';
 
@@ -7,14 +7,22 @@ import {v4 as uuidv4} from 'uuid';
 // completada: si la tarea se va a mostrar o no
 // completarTarea, eliminarTarea: funciones pasadas como props para completar y eliminar una tarea
 function Tarea ({ id, texto, completada, completarTarea, eliminarTarea }) {
+  const [aCompletar, setACompletar] = useState(false);
+
   return (
 // Si el prop 'completada' es True     le pone esta clase    si no,    ésta
     <div className = {completada ? 'tarea-contenedor completada' : 'tarea-contenedor'}>
       <div className = "tarea-texto"    onClick = {() => completarTarea(id)}>
         {texto}
       </div>
-        <div className = "tarea-contenedor-iconos"    onClick = {() => eliminarTarea(id)}>
-        <AiOutlineCloseCircle className="tarea-icono"/>
+        <div className = "tarea-contenedor-iconos"
+          onClick = {() => eliminarTarea(id)}
+          onMouseEnter = {() => setACompletar(true)}
+          onMouseLeave = {() => setACompletar(false)}>
+            {aCompletar ?
+              <AiFillCheckCircle className="tarea-icono-check"/> :
+              <AiOutlineCheckCircle className="tarea-icono-close" />}
+        {/* {(setACompletar(true)) ? <AiFillCheckCircle className="tarea-icono"/> : <AiFillCheckSquare/>} */}
       </div>
     </div>
   );
