@@ -1,9 +1,9 @@
 html.Tareas,
-body.Tareas{
+body.Tareas {
   color: white;
   margin-top: 40px;
 }
-h1{
+h1 {
   color: #1b1b32;
   font-size: 25px;
   font-family: Roboto, sans-serif;
@@ -11,7 +11,7 @@ h1{
   margin: 20px 0;
 }
 
-.Tareas{
+.Tareas {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -19,18 +19,19 @@ h1{
 }
 
 /* Lista de Tareas */
-.contenedor-tareas{
-  width: 560px;
+.contenedor-tareas {
+  width: 41vw;
   min-height: 500px;
-  background-color: #AFA88C;
+  background-color: #afa88c;
   border: 5px solid white;
   padding: 14px;
   justify-content: center;
   border-radius: 20px;
   box-shadow: 1px 2px 0.06em 1px rgb(0, 0, 0, 0.5);
 }
+
 /* Tarea individuales */
-.tarea-contenedor{
+.tarea-contenedor {
   width: 500px;
   min-height: 65px;
   background-color: #1b1b32;
@@ -45,27 +46,34 @@ h1{
   box-shadow: 1px 2px 0.06em 1px rgb(0, 0, 0, 0.5);
 }
 
-.tarea-contenedor:nth-child(8n + 1){
-  background-color: #F8F3DF;
-  } .tarea-contenedor:nth-child(8n + 2){
-    background-color: #D1D7D6;
-    } .tarea-contenedor:nth-child(8n + 3){
-      background-color: #A9BACE;
-      } .tarea-contenedor:nth-child(8n + 4){
-        background-color: #819EC5;
-        } .tarea-contenedor:nth-child(8n + 5){
-          background-color: #5981BC;
-          } .tarea-contenedor:nth-child(8n + 6){
-            background-color: #819EC5;
-            } .tarea-contenedor:nth-child(8n + 7){
-              background-color: #A9BACE;
-              } .tarea-contenedor:nth-child(8n + 8){
-                background-color: #D1D7D6;
-                }
+.tarea-contenedor:nth-child(8n + 1) {
+  background-color: #f8f3df;
+}
+.tarea-contenedor:nth-child(8n + 2) {
+  background-color: #d1d7d6;
+}
+.tarea-contenedor:nth-child(8n + 3) {
+  background-color: #a9bace;
+}
+.tarea-contenedor:nth-child(8n + 4) {
+  background-color: #819ec5;
+}
+.tarea-contenedor:nth-child(8n + 5) {
+  background-color: #5981bc;
+}
+.tarea-contenedor:nth-child(8n + 6) {
+  background-color: #819ec5;
+}
+.tarea-contenedor:nth-child(8n + 7) {
+  background-color: #a9bace;
+}
+.tarea-contenedor:nth-child(8n + 8) {
+  background-color: #d1d7d6;
+}
 
 /* Texto */
-.tarea-texto{
-  color: #1C1B17;
+.tarea-texto {
+  color: #1c1b17;
   width: 100%;
   height: 100%;
   font-size: 20px;
@@ -74,40 +82,40 @@ h1{
   user-select: none;
   overflow-wrap: anywhere; /* Si el texto de la tarea es muy largo, va a continuar hacia abajo */
 }
-.tarea-icono-check{
+.tarea-icono-check {
   color: #268600;
   width: 25px;
   height: 25px;
   margin: 5px;
 }
-.tarea-icono-close{
-  color: #8C8C8C;
+.tarea-icono-close {
+  color: #8c8c8c;
   width: 25px;
   height: 25px;
   margin: 5px;
 }
 
-.tarea-contenedor.completada{
-  background-color: #8C8C8C;
+.tarea-contenedor.completada {
+  background-color: #8c8c8c;
   text-decoration: line-through #252525;
 }
 
 /* Formulario */
-.tarea-formulario{
+.tarea-formulario {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-.tarea-input{
+.tarea-input {
   width: 350px;
   font-size: 18px;
-  background-color: #240A17;
-  color: #9F377D;
+  background-color: #240a17;
+  color: #9f377d;
   padding: 14px 32px 14px 16px;
   border-radius: 50px;
-  border: 2px solid #F74738;
+  border: 2px solid #f74738;
   box-shadow: 1px 2px 0.06em 1px rgb(0, 0, 0, 0.5);
   outline: none;
 }
@@ -116,11 +124,11 @@ h1{
 .tarea-input:-webkit-autofill:hover,
 .tarea-input:-webkit-autofill:focus,
 .tarea-input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
 }
 
 /* Boton agregar tarea */
-.tarea-boton{
+.tarea-boton {
   margin-left: 10px;
   padding: 16px;
   font-size: 18px;
@@ -129,14 +137,36 @@ h1{
   border-radius: 50px;
   cursor: pointer;
   outline: none;
-  background-color: #F74738;
-  color: #F8F3DF;
+  background-color: #f74738;
+  color: #f8f3df;
   text-transform: capitalize;
   box-shadow: 1px 2px 0.06em 1px rgb(0, 0, 0, 0.5);
 }
-.tareas-lista-contenedor{
+.tareas-lista-contenedor {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 15px;
+}
+
+/* Responsive: Mobile */
+@media only screen and (max-width: 420px) {
+  .contenedor-tareas {
+    width: 90vw;
+    margin-right: 6vw;
+  }
+  .tarea-formulario {
+    justify-content: space-evenly;
+  }
+  .tarea-input{
+    width: 72%;
+    border-radius: 12px;
+  }
+  .tarea-boton{
+    width: 25%;
+    margin-left: 5px;
+    padding: 5px 0;
+    font-size: 15px;
+    border-radius: 12px;
+  }
 }
