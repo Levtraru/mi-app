@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:  'Roboto', 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -12,10 +13,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.velcamp-logo-contenedor{
+
+main{
+  padding-top: 15px;
   width: 100%;
+  box-sizing: border-box;
+  background-color: #1b1b32;
   display: flex;
+  flex-wrap:wrap;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  font-family: Lato, sans-serif;
+}
+
+.velcamp-logo-contenedor{
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+
+.remove-underline{
+  text-decoration: none;
 }
